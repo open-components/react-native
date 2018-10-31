@@ -1,6 +1,5 @@
 import RNFetchBlob from 'react-native-fetch-blob'
 import NavigationService from "../components/NavigationService";
-import CookieManager from 'react-native-cookiemanager';
 // 处理url
 function encodeQuery(url, params = {}) {
 	let _url = url;

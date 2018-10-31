@@ -3892,10 +3892,6 @@ react-native-camera@0.10.0:
   dependencies:
     prop-types "^15.5.10"
 
-react-native-cookiemanager@^0.2.0:
-  version "0.2.0"
-  resolved "http://registry.npm.taobao.org/react-native-cookiemanager/download/react-native-cookiemanager-0.2.0.tgz#a9da4c3dd92bd1c15fae420ede084c4e2a3988c2"
-
 react-native-dismiss-keyboard@1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/react-native-dismiss-keyboard/download/react-native-dismiss-keyboard-1.0.0.tgz#32886242b3f2317e121f3aeb9b0a585e2b879b49"

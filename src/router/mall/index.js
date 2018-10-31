@@ -11,7 +11,6 @@ import {
   StatusBar
 } from 'react-native';
 import NavigationService from '../../components/NavigationService';
-import { SmartRefreshControl, ClassicsHeader, StoreHouseHeader, DefaultHeader } from 'react-native-smartrefreshlayout';
 
 export default class Mall extends Component {
   //构造函数
@@ -35,11 +34,39 @@ export default class Mall extends Component {
   }
   render() {
     return (
-      <View>
-        <Text>主页</Text>
+      <View style={{ flex: 1, height: HEIGHT, backgroundColor: '#fafafa', paddingTop: StatusBar.currentHeight }}>
+        <View style={styles.topText}>
+          <Text style={styles.topText_}>商城</Text>
+        </View>
+        <View style={styles.center}>
+          <Image source={require('../../resource/images/development.gif')} style={styles.gif}></Image>
+          <Text>该功能暂未开放，敬请等待</Text>
+        </View>
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create()
+const styles = StyleSheet.create({
+  topText: {
+    justifyContent: 'center',
+    height: SCALE(80),
+  },
+  topText_: {
+    fontSize: SCALE(40),
+    paddingLeft: SCALE(30),
+    fontWeight: 'bold',
+    color: '#333'
+  },
+  center: {
+    flex: 1,
+    paddingBottom: SCALE(280),
+    backgroundColor: '#eee',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  gif: {
+    width: SCALE(200),
+    height: SCALE(200),
+  },
+})
