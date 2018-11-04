@@ -1,8 +1,7 @@
-import { Dimensions, PixelRatio, Platform } from 'react-native';
+import { Dimensions, PixelRatio, Platform ,StatusBar} from 'react-native';
+import { Theme } from 'teaset'
 import './storageInit'
 import './HttpUtil'
-// import './iphoneX'
-// import './CheckUtil'
 
 export const deviceWidth = Dimensions.get('window').width;      //设备的宽度
 export const deviceHeight = Dimensions.get('window').height;    //设备的高度
@@ -45,6 +44,16 @@ export function Log(...params) {
     // Log('release模式');
   }
 }
+
+global.paddingTop = ()=>{
+  if(Theme.isIPhoneX){
+    return scaleSize(80)
+  }else{
+    return StatusBar.currentHeight
+  }
+};
+
+global.isIPhoneX = Theme.isIPhoneX;
 
 global.FONT = setSpText;
 

@@ -39,7 +39,7 @@ export default class BankCard extends Component {
           flex: 1,
           height: HEIGHT,
           backgroundColor: "#fafafa",
-          paddingTop: StatusBar.currentHeight + SCALE(88),
+          paddingTop: paddingTop() + SCALE(88),
           alignItems: "center"
         }}
       >

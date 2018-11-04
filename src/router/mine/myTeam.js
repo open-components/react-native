@@ -15,6 +15,7 @@ import {
 import HeaderTitle from "../../components/header";
 import Toast from "../../components/toast";
 import { SmartRefreshControl, AnyHeader, StoreHouseHeader, DefaultHeader } from 'react-native-smartrefreshlayout';
+// import MJRefresh,{FlatList} from 'react-native-mjrefresh-lower'
 
 export default class MyTeam extends Component {
   //构造函数
@@ -54,7 +55,7 @@ export default class MyTeam extends Component {
     const { navigate } = this.props.navigation;
     const { actionBar } = this.state;
     return (
-      <View style={{ flex: 1, height: HEIGHT, backgroundColor: '#fafafa', paddingTop: StatusBar.currentHeight + SCALE(88) }}>
+      <View style={{ flex: 1, height: HEIGHT, backgroundColor: '#fafafa', paddingTop: paddingTop() + SCALE(88) }}>
         <Toast ref='toast'></Toast>
         <HeaderTitle
           title={'我的团队'}
@@ -74,14 +75,14 @@ export default class MyTeam extends Component {
             </TouchableOpacity>)}
         </View>
         <FlatList
-          refreshControl={<SmartRefreshControl
+          refreshControl={Platform.os=='android'?<SmartRefreshControl
             ref={refreshcontrol => this.refreshControl = refreshcontrol}
             HeaderComponent={<AnyHeader />}
             maxDragRate={0.1}
             overScrollBounce={false}
             overScrollDrag={false}
             primaryColor={'#fafafa'}
-          />}
+          />:null}
           data={[{ key: 'a' }, { key: 'b' }, { key: 'c' }, { key: 'd' }, { key: 'e' }, { key: 'f' }, { key: 'g' }, { key: 'h' }]}
           renderItem={({ item, index }) => <View style={index === 0 ? { paddingTop: SCALE(30) } : {}}>
             <View style={styles.users}>
@@ -143,7 +144,7 @@ const styles = StyleSheet.create({
     ...layout.margin(0, SCALE(30), SCALE(30), SCALE(30)),
     backgroundColor: '#fff',
     borderRadius: SCALE(8),
-    ...layout.shadow('#000', { w: 0, h: SCALE(4) }, 0.04, SCALE(20)),
+    ...layout.shadow('#000', { w: 0, h: SCALE(4) }, 0.08, SCALE(20)),
     elevation: 2
   },
   usersImg: {

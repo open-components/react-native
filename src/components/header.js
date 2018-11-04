@@ -22,7 +22,7 @@ export default class HeaderTitle extends Component{
     const img = solid ? require('../resource/images/backIcon_.png') : require('../resource/images/backIcon.png');
     const solidStyle = solid ? layout.border(SCALE(1),'#e6e6e6','bottom') : {};
     return (
-      <View style={{...solidStyle,position:'absolute',top:0,left:0,height:SCALE(88),zIndex:999,width:WIDTH,flexDirection: 'row',alignItems: 'center',justifyContent:'space-between',marginTop:StatusBar.currentHeight,...layout.padding(0,SCALE(30)),...headerStyle,}}>
+      <View style={{...solidStyle,position:'absolute',top:paddingTop(),left:0,height:SCALE(88),zIndex:999,width:WIDTH,flexDirection: 'row',alignItems: 'center',justifyContent:'space-between',marginTop:StatusBar.currentHeight,...layout.padding(0,SCALE(30)),...headerStyle,}}>
         <TouchableOpacity activeOpacity={0.8} onPress={this._goBack}>
             <View style={{width:SCALE(120),flexShrink:0}}>
                 <Image source={img}/>

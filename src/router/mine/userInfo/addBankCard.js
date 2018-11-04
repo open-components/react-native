@@ -32,7 +32,7 @@ export default class AddBankCard extends Component {
     const { navigate } = this.props.navigation;
     const { userInfo } = this.state;
     return (
-      <View style={{ flex: 1, height: HEIGHT, backgroundColor: '#fafafa', paddingTop: StatusBar.currentHeight + SCALE(88) }}>
+      <View style={{ flex: 1, height: HEIGHT, backgroundColor: '#fafafa', paddingTop: paddingTop() + SCALE(88) }}>
         <Toast ref='toast'></Toast>
         <HeaderTitle
           title={'添加银行卡'}

@@ -3,7 +3,6 @@ package com.aite;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.heng.cookie.CookieManagerPackage;
 import com.imagepicker.ImagePickerPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
@@ -29,6 +28,7 @@ public class MainApplication extends Application implements ReactApplication {
 
     @Override
     protected List<ReactPackage> getPackages() {
+<<<<<<< HEAD
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
             new CookieManagerPackage(),
@@ -40,6 +40,11 @@ public class MainApplication extends Application implements ReactApplication {
             new SmartRefreshLayoutPackage(),
             new RNFetchBlobPackage()
       );
+=======
+      return Arrays.<ReactPackage>asList(new MainReactPackage(), new ImagePickerPackage(), new VectorIconsPackage(),
+          new LinearGradientPackage(), new PickerPackage(), new RCTCameraPackage(), new SplashScreenReactPackage(),
+          new SmartRefreshLayoutPackage(), new RNFetchBlobPackage());
+>>>>>>> eeea06b8b9e5920ba9b83f49ea2ea0401ccbe241
     }
 
     @Override

@@ -1,4 +1,4 @@
-# Store-Currency
+# Store-Currency
 
 
 ## 注意事項

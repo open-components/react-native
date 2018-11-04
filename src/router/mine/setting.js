@@ -42,7 +42,7 @@ export default class Setting extends Component {
   render() {
     const { navigate } = this.props.navigation;
     return (
-      <View style={{ flex: 1, height: HEIGHT, backgroundColor: '#f5f5f5', paddingTop: StatusBar.currentHeight + SCALE(88) }}>
+      <View style={{ flex: 1, height: HEIGHT, backgroundColor: '#f5f5f5', paddingTop: paddingTop() + SCALE(88) }}>
         <StatusBar
           animated={true}
           hidden={false}  //是否隐藏状态栏。  

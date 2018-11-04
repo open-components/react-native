@@ -139,7 +139,6 @@ android {
 }
 
 dependencies {
-    compile project(':react-native-cookiemanager')
     compile project(':react-native-image-picker')
     compile project(':react-native-vector-icons')
     compile project(':react-native-linear-gradient')
@@ -148,6 +147,7 @@ dependencies {
     compile project(':react-native-smartrefreshlayout')
     compile project(':react-native-fetch-blob')
     compile fileTree(dir: "libs", include: ["*.jar"])
+    compile 'com.facebook.fresco:animated-gif:1.3.0'
     compile "com.android.support:appcompat-v7:26.0.2"
     compile "com.facebook.react:react-native:+"  // From node_modules
 }

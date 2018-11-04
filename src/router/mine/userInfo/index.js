@@ -122,7 +122,7 @@ export default class UserInfo extends Component {
     const { navigate } = this.props.navigation;
     const { userInfo } = this.state;
     return (
-      <View style={{ flex: 1, height: HEIGHT, backgroundColor: '#fafafa', paddingTop: StatusBar.currentHeight + SCALE(88) }}>
+      <View style={{ flex: 1, height: HEIGHT, backgroundColor: '#fafafa', paddingTop: paddingTop() + SCALE(88) }}>
         <StatusBar
           animated={true}
           hidden={false}  //是否隐藏状态栏。  
