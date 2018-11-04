@@ -12,7 +12,7 @@ import {
     Dimensions,
     StatusBar
 } from 'react-native';
-import ImagePicker from 'react-native-image-crop-picker';
+// import ImagePicker from 'react-native-image-crop-picker';
 
 const { width, height } = Dimensions.get('window');
 
@@ -104,17 +104,17 @@ export default class Scan extends Component {
         console.log('status=' + status);
     }
     //选择图片
-    pickOne = () => {
-        ImagePicker.openPicker({
-          width:300,
-          height:400,
-          cropping:false
-        }).then(e => {
-          Log(JSON.stringify(e))
-        }).catch(e => {
-          alert(e)
-        })
-      }
+    // pickOne = () => {
+    //     ImagePicker.openPicker({
+    //       width:300,
+    //       height:400,
+    //       cropping:false
+    //     }).then(e => {
+    //       Log(JSON.stringify(e))
+    //     }).catch(e => {
+    //       alert(e)
+    //     })
+    //   }
     render() {
         const {
             openFlash,
@@ -148,7 +148,7 @@ export default class Scan extends Component {
                                             </TouchableOpacity>
                                         </View>
                                         <View style={styles.rightContainer}>
-                                            <TouchableOpacity activeOpacity={1}  onPress={this.pickOne}>
+                                            <TouchableOpacity activeOpacity={1}  onPress={()=>{}}>
                                                 <Text style={{color:'#fff'}}>相册</Text>
                                             </TouchableOpacity>
                                         </View>

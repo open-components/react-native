@@ -7,7 +7,6 @@ import com.heng.cookie.CookieManagerPackage;
 import com.imagepicker.ImagePickerPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
-import com.reactnative.ivpusic.imagepicker.PickerPackage;
 import com.lwansbrough.RCTCamera.RCTCameraPackage;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.lmy.smartrefreshlayout.SmartRefreshLayoutPackage;
@@ -36,7 +35,6 @@ public class MainApplication extends Application implements ReactApplication {
             new ImagePickerPackage(),
             new VectorIconsPackage(),
             new LinearGradientPackage(),
-            new PickerPackage(),
             new RCTCameraPackage(),
             new SplashScreenReactPackage(),
             new SmartRefreshLayoutPackage(),

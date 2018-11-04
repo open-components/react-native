@@ -39,7 +39,6 @@
 		642E39D027D947DBBC56DF78 /* libRNFetchBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C8C0451B2943878383964F /* libRNFetchBlob.a */; };
 		615A8011A5DA425698AFF902 /* libSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7596A383AF664C92A4BC4181 /* libSplashScreen.a */; };
 		C7B8C8AFEB834A82B3B7A21A /* libRCTCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4481E7312DBF496E84A44BEF /* libRCTCamera.a */; };
-		5630D391AD624D59A19E3114 /* libimageCropPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 477780C30182423594ACF511 /* libimageCropPicker.a */; };
 		F7F2AB3CC11B421C97A0F3D2 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7D77896C264186AB4F8380 /* libBVLinearGradient.a */; };
 		6F0A32E83D5A4F3FBF797CD6 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F282BF3C5B1B4688AF9C181C /* libRNVectorIcons.a */; };
 		3AEC9703E00E4D37B8C783DA /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83329014EC2849C5A0F33F55 /* Entypo.ttf */; };
@@ -290,8 +289,6 @@
 		7596A383AF664C92A4BC4181 /* libSplashScreen.a */ = {isa = PBXFileReference; name = "libSplashScreen.a"; path = "libSplashScreen.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		A7229521C36A4F0EA98232DD /* RCTCamera.xcodeproj */ = {isa = PBXFileReference; name = "RCTCamera.xcodeproj"; path = "../node_modules/react-native-camera/ios/RCTCamera.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		4481E7312DBF496E84A44BEF /* libRCTCamera.a */ = {isa = PBXFileReference; name = "libRCTCamera.a"; path = "libRCTCamera.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
-		F7DBA631D4BB48CABDFC7D8D /* imageCropPicker.xcodeproj */ = {isa = PBXFileReference; name = "imageCropPicker.xcodeproj"; path = "../node_modules/react-native-image-crop-picker/ios/imageCropPicker.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		477780C30182423594ACF511 /* libimageCropPicker.a */ = {isa = PBXFileReference; name = "libimageCropPicker.a"; path = "libimageCropPicker.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		8DDFD226F30542F49662F0A7 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; name = "BVLinearGradient.xcodeproj"; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		3C7D77896C264186AB4F8380 /* libBVLinearGradient.a */ = {isa = PBXFileReference; name = "libBVLinearGradient.a"; path = "libBVLinearGradient.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		B1ADE5FA4DE84318AC850D5F /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; name = "RNVectorIcons.xcodeproj"; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
@@ -343,7 +340,6 @@
 				642E39D027D947DBBC56DF78 /* libRNFetchBlob.a in Frameworks */,
 				615A8011A5DA425698AFF902 /* libSplashScreen.a in Frameworks */,
 				C7B8C8AFEB834A82B3B7A21A /* libRCTCamera.a in Frameworks */,
-				5630D391AD624D59A19E3114 /* libimageCropPicker.a in Frameworks */,
 				F7F2AB3CC11B421C97A0F3D2 /* libBVLinearGradient.a in Frameworks */,
 				6F0A32E83D5A4F3FBF797CD6 /* libRNVectorIcons.a in Frameworks */,
 				A35C4E25ADB44C799F3FA1BF /* libRNImagePicker.a in Frameworks */,
@@ -518,7 +514,6 @@
 				CE73F44EEF244DDEA0EDBF95 /* RNFetchBlob.xcodeproj */,
 				0118753FEA18460A92C8AC78 /* SplashScreen.xcodeproj */,
 				A7229521C36A4F0EA98232DD /* RCTCamera.xcodeproj */,
-				F7DBA631D4BB48CABDFC7D8D /* imageCropPicker.xcodeproj */,
 				8DDFD226F30542F49662F0A7 /* BVLinearGradient.xcodeproj */,
 				B1ADE5FA4DE84318AC850D5F /* RNVectorIcons.xcodeproj */,
 				DF34AFD241904464BC8D65E8 /* RNImagePicker.xcodeproj */,
@@ -1106,13 +1101,6 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aite.app/aite";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1143,13 +1131,6 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/aite.app/aite";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1244,13 +1225,6 @@
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1290,13 +1264,6 @@
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1331,13 +1298,6 @@
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};
 			name = Debug;
@@ -1362,13 +1322,6 @@
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};
 			name = Release;
