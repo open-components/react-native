@@ -49,6 +49,7 @@ global.paddingTop = () => {
   if(Theme.isIPhoneX){
     return scaleSize(80)
   }else{
+    Log(StatusBar.currentHeight)
     return StatusBar.currentHeight
   }
 };
