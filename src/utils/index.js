@@ -45,7 +45,7 @@ export function Log(...params) {
   }
 }
 
-global.paddingTop = ()=>{
+global.paddingTop = () => {
   if(Theme.isIPhoneX){
     return scaleSize(80)
   }else{
